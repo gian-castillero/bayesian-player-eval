@@ -19,7 +19,10 @@ TRACES_DIR   = ROOT / "outputs" / "traces"
 RANKINGS_DIR = ROOT / "outputs" / "rankings"
 
 # ── Domain constants ───────────────────────────────────────────────────────────
-POSITIONS: list[str] = ["FW", "MF", "DF", "GK"]
+POSITIONS: list[str] = ["FW", "MF", "DF"]  # GK excluded — needs separate model with GK-specific metrics
+
+# Calendar years that define the current season (Panama league spans two calendar years)
+SEASON_YEARS: list[int] = [2025, 2026]
 
 # Per-90 metrics modelled — each one triggers a separate model run / trace file
 METRICS: list[str] = ["xg_p90", "key_passes_p90", "prog_carries_p90"]
