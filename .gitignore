@@ -31,12 +31,17 @@ secrets.toml
 .streamlit/secrets.toml
 
 # ── Data (licensed — never commit raw or processed exports) ────────────────────
-data/raw/
-data/processed/
+# Exclude contents but not the directories themselves (so .gitkeep is tracked)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 
 # ── Model outputs (large files — reproducible from the pipeline) ───────────────
-outputs/traces/
-outputs/rankings/
+outputs/traces/*
+!outputs/traces/.gitkeep
+outputs/rankings/*
+!outputs/rankings/.gitkeep
 
 # ── macOS ──────────────────────────────────────────────────────────────────────
 .DS_Store
