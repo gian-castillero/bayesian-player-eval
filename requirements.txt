@@ -1,0 +1,18 @@
+# ── Core modeling (install via conda-forge, not pip) ──────────────────────────
+# conda install -c conda-forge pymc arviz
+pymc==5.28.5
+arviz==0.23.4
+pytensor==2.38.3
+
+# ── Data ───────────────────────────────────────────────────────────────────────
+pandas==3.0.3
+numpy==2.4.6
+pyarrow==24.0.0
+
+# ── Visualization ──────────────────────────────────────────────────────────────
+plotly==6.8.0
+streamlit==1.58.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────────
+python-dotenv==1.2.2
+rich==14.0.0
