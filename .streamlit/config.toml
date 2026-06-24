@@ -1,0 +1,22 @@
+[server]
+# Fixed port so 'streamlit run app/Home.py' is always at localhost:8501
+port = 8501
+# Prevents Streamlit from opening a browser tab automatically on every run
+headless = false
+
+[browser]
+# Suppress the "email / usage stats" prompt on first launch
+gatherUsageStats = false
+
+[theme]
+base            = "dark"
+primaryColor    = "#00d4aa"   # teal accent — CI bars, selected items
+backgroundColor = "#0e1117"   # near-black background
+secondaryBackgroundColor = "#1a1f2e"   # card / sidebar background
+textColor       = "#e0e0e0"   # off-white body text
+font            = "monospace"
+
+[runner]
+# Disable the "Source file changed, rerun?" prompt in production
+# Set to true during development for hot-reload convenience
+fastReruns = true
